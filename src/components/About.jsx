@@ -23,7 +23,7 @@ export default function About() {
                 <Shield size={28} className="text-gold" />
                 <div>
                   <h4>Engineering Hub</h4>
-                  <p>Talwade Haveli, Pune</p>
+                  <p>Bhosari, Pune</p>
                 </div>
               </div>
             </div>
@@ -40,7 +40,7 @@ export default function About() {
             <h2 className="section-title">About Shree Sidheshwar Industries</h2>
             
             <p className="about-lead">
-              Shree Sidheshwar Industries is an industrial engineering company based in Talwade, Pune, specializing in precision CNC work, honing, hard chrome plating, machining and hydraulic cylinder manufacturing and refurbishment.
+              Shree Sidheshwar Industries is an industrial engineering company based in Bhosari, Pune, specializing in precision CNC work, honing, hard chrome plating, machining and hydraulic cylinder manufacturing and refurbishment.
             </p>
 
             <p className="about-text">

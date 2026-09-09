@@ -34,7 +34,7 @@ export default function Navbar() {
       <div className="top-bar">
         <div className="container top-bar-inner">
           <div className="top-bar-left">
-            <span>Precision CNC & Hydraulic Cylinder Facility • Talwade, Pune</span>
+            <span>Precision CNC & Hydraulic Cylinder Facility • Bhosari, Pune</span>
           </div>
           <div className="top-bar-right">
             <a href={`tel:${companyData.primaryCallNumber}`} className="top-contact-link">

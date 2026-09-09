@@ -100,7 +100,7 @@ export default function Enquiry() {
 
                 <div className="e-highlight-item">
                   <span className="e-badge">Facility</span>
-                  <p>Gat No. 169, Rupinagar East, Talwade Haveli, Pune - 412114.</p>
+                  <p>Plot No. 122, Esteem Engineer's, Sector No. 10, PCNTDA, Bhosari, Pune - 411026.</p>
                 </div>
               </div>
 

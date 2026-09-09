@@ -94,7 +94,7 @@ export default function Hero() {
             </li>
           </ul>
           <div className="hero-card-footer">
-            <span className="location-pill">Talwade Haveli, Pune</span>
+            <span className="location-pill">Bhosari, Pune</span>
             <span className="quick-call">Direct: +91 97630 10396</span>
           </div>
         </div>

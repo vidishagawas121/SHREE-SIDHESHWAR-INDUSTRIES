@@ -31,7 +31,7 @@ export default function WhyChooseUs() {
               Why Choose Shree Sidheshwar Industries?
             </h2>
             <p className="why-lead-desc">
-              We specialize strictly in heavy-duty industrial requirements. Every component machined and every cylinder built or refurbished in our Talwade facility meets rigorous mechanical performance demands.
+              We specialize strictly in heavy-duty industrial requirements. Every component machined and every cylinder built or refurbished in our Bhosari facility meets rigorous mechanical performance demands.
             </p>
 
             <div className="why-highlight-box">
@@ -42,7 +42,7 @@ export default function WhyChooseUs() {
             </div>
 
             <div className="why-location-note">
-              <strong>Location Advantage:</strong> Rupinagar East, Talwade Haveli, Pune — well-connected to industrial clusters across Maharashtra and western India.
+              <strong>Location Advantage:</strong> Sector No. 10, PCNTDA, Bhosari, Tal.-Haveli, Pune — well-connected to industrial clusters across Maharashtra and western India.
             </div>
           </div>
 

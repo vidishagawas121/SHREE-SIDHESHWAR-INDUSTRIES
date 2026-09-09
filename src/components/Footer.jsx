@@ -90,9 +90,9 @@ export default function Footer() {
             <div className="footer-contact-item">
               <MapPin size={18} className="footer-contact-icon text-gold" />
               <p>
-                Gat No. 169, Rupinagar East, <br />
-                Talwade Haveli, Pune - 412114, <br />
-                Maharashtra, India
+                Plot No. 122, Esteem Engineer's, <br />
+                Sector No. 10, PCNTDA, Bhosari, <br />
+                Tal.-Haveli, Pune - 411026
               </p>
             </div>
 
@@ -125,7 +125,7 @@ export default function Footer() {
             © 2026 Shree Sidheshwar Industries. All Rights Reserved.
           </p>
           <div className="footer-bottom-notes">
-            <span>Talwade, Pune • Industrial Engineering & Hydraulic Cylinders</span>
+            <span>Bhosari, Pune • Industrial Engineering & Hydraulic Cylinders</span>
           </div>
         </div>
       </div>

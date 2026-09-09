@@ -8,14 +8,14 @@ export const companyData = {
   gst: "27BNPPB4565G1ZT",
   
   address: {
-    line1: "Gat No. 169, Rupinagar East",
-    line2: "Talwade Haveli",
+    line1: "Plot No. 122, Esteem Engineer's, Sector No. 10",
+    line2: "PCNTDA, Bhosari, Tal.-Haveli",
     city: "Pune",
-    pincode: "412114",
+    pincode: "411026",
     state: "Maharashtra",
     country: "India",
-    fullAddress: "Gat No. 169, Rupinagar East, Talwade Haveli, Pune - 412114, Maharashtra, India",
-    googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Gat+No.+169,+Rupinagar+East,+Talwade+Haveli,+Pune+-+412114"
+    fullAddress: "Plot No. 122, Esteem Engineer's, Sector No. 10, PCNTDA, Bhosari, Tal.-Haveli, Pune - 411026, Maharashtra, India",
+    googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Plot+No.+122,+Esteem+Engineers,+Sector+No.+10,+PCNTDA,+Bhosari,+Pune+-+411026"
   },
 
   contacts: [
@@ -35,7 +35,7 @@ export const companyData = {
 
   primaryWhatsappNumber: "919763010396",
   primaryCallNumber: "+919763010396",
-  email: "shreesidheshwariindustries01@gmail.com",
+  email: "shreesidheshwarindustries01@gmail.com",
 
   // Curated high-resolution industrial photography (Verified 200 HTTP active direct URLs)
   images: {

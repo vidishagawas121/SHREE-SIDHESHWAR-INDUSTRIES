@@ -1,6 +1,6 @@
 # Shree Sidheshwar Industries - Official Website
 
-A production-ready, responsive, industrial-grade static website for **Shree Sidheshwar Industries** (Talwade, Pune).
+A production-ready, responsive, industrial-grade static website for **Shree Sidheshwar Industries** (Bhosari, Pune).
 
 Specialized in:
 - CNC Machining & Turning
@@ -76,6 +76,6 @@ All company details, telephone numbers, and photography can be customized in one
 - **Key Contacts**:
   - Mr. Sachin Ajjanalkar: `+91 9763010396`
   - Mr. Ramesh Bolade: `+91 9763520994`, `+91 8308821687`
-- **Official Email**: `shreesidheshwariindustries01@gmail.com`
+- **Official Email**: `shreesidheshwarindustries01@gmail.com`
 - **GSTIN**: `27BNPPB4565G1ZT`
-- **Location**: Gat No. 169, Rupinagar East, Talwade Haveli, Pune - 412114, Maharashtra, India.
+- **Location**: Plot No. 122, Esteem Engineer's, Sector No. 10, PCNTDA, Bhosari, Tal.-Haveli, Pune - 411026, Maharashtra, India.
