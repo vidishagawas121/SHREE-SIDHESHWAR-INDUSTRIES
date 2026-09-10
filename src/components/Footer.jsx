@@ -40,11 +40,11 @@ export default function Footer() {
             </div>
 
             <p className="footer-tagline">
-              "{companyData.tagline}"
+              “{companyData.tagline}”
             </p>
 
             <p className="footer-mission">
-              "{companyData.motto}"
+              “{companyData.motto}”
             </p>
 
             <div className="footer-reg-chips">

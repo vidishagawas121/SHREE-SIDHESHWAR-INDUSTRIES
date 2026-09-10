@@ -2400,14 +2400,7 @@ button, input, textarea, select {
   box-shadow: var(--shadow-md);
 }
 
-.motto-icon-quote {
-  font-family: var(--font-heading);
-  font-size: 2.4rem;
-  color: var(--color-accent);
-  line-height: 1;
-  opacity: 0.6;
-  margin-bottom: -10px;
-}
+
 
 .motto-text {
   font-size: 1rem;

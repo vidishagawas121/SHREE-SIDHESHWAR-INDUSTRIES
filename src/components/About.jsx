@@ -35,9 +35,8 @@ export default function About() {
 
             {/* Client Presentation Motto Quote Card */}
             <div className="about-motto-card">
-              <div className="motto-icon-quote">“</div>
               <p className="motto-text">
-                {companyData.motto}”
+                “{companyData.motto}”
               </p>
               <span className="motto-signature">— Shree Sidheshwar Industries</span>
             </div>
