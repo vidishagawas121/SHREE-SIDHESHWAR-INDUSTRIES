@@ -15,16 +15,19 @@ export default function Navbar() {
       }
     };
     window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
   }, []);
 
   const navLinks = [
     { name: 'Home', href: '#home' },
-    { name: 'About Us', href: '#about' },
-    { name: 'Services', href: '#services' },
+    { name: 'About', href: '#about' },
+    { name: 'Facilities', href: '#facilities' },
+    { name: 'Products', href: '#products' },
+    { name: 'Quality', href: '#quality' },
     { name: 'Industries', href: '#industries' },
-    { name: 'Why Us', href: '#why-us' },
-    { name: 'Enquiry', href: '#enquiry' },
     { name: 'Contact', href: '#contact' }
   ];
 
@@ -34,7 +37,7 @@ export default function Navbar() {
       <div className="top-bar">
         <div className="container top-bar-inner">
           <div className="top-bar-left">
-            <span>Precision CNC & Hydraulic Cylinder Facility • Bhosari, Pune</span>
+            <span>Beyond the manufacturing • Precision Facilities • Bhosari, Pune</span>
           </div>
           <div className="top-bar-right">
             <a href={`tel:${companyData.primaryCallNumber}`} className="top-contact-link">

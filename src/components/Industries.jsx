@@ -1,11 +1,12 @@
 import React from 'react';
-import { Layers, Activity, Gauge, Anchor, ArrowUpRight } from 'lucide-react';
+import { Layers, Activity, Gauge, Anchor, ArrowUpRight, Cog } from 'lucide-react';
 import { companyData, generateWhatsAppUrl } from '../data/companyData';
 
 export default function Industries() {
   const iconMap = {
     "steel-plants": Layers,
     "cement-plants": Activity,
+    "oem-spare-parts": Cog,
     "press-machinery": Gauge,
     "ports": Anchor
   };
@@ -13,6 +14,7 @@ export default function Industries() {
   const imageMap = {
     "steel-plants": companyData.images.industries.steel,
     "cement-plants": companyData.images.industries.cement,
+    "oem-spare-parts": companyData.images.industries.oem,
     "press-machinery": companyData.images.industries.press,
     "ports": companyData.images.industries.ports
   };
@@ -31,7 +33,7 @@ export default function Industries() {
         <div className="industries-grid">
           {companyData.industries.map((item) => {
             const IconComponent = iconMap[item.id] || Layers;
-            const bgImage = imageMap[item.id];
+            const bgImage = imageMap[item.id] || companyData.images.industries.oem || companyData.images.industries.steel;
             const industryWaUrl = generateWhatsAppUrl({
               requirement: `Enquiry regarding machining and hydraulic cylinder solutions for the ${item.title} industry.`
             });

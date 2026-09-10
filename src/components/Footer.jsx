@@ -5,21 +5,21 @@ import { companyData } from '../data/companyData';
 export default function Footer() {
   const quickLinks = [
     { name: 'Home', href: '#home' },
-    { name: 'About Us', href: '#about' },
-    { name: 'Services', href: '#services' },
-    { name: 'Industries', href: '#industries' },
-    { name: 'Why Us', href: '#why-us' },
-    { name: 'Enquiry', href: '#enquiry' },
-    { name: 'Contact', href: '#contact' }
+    { name: 'About Company', href: '#about' },
+    { name: 'Machine Facilities', href: '#facilities' },
+    { name: 'Products & Output', href: '#products' },
+    { name: 'Quality Inspection', href: '#quality' },
+    { name: 'Industries Served', href: '#industries' },
+    { name: 'Contact & Bank Details', href: '#contact' }
   ];
 
   const servicesLinks = [
-    { name: 'CNC Work', href: '#services' },
-    { name: 'Honing', href: '#services' },
-    { name: 'Hard Chrome Plating', href: '#services' },
-    { name: 'Machining Facility', href: '#services' },
-    { name: 'Hydraulic Cylinder Manufacturing', href: '#services' },
-    { name: 'Hydraulic Cylinder Refurbishment', href: '#services' }
+    { name: 'CNC Turning Facility', href: '#facilities' },
+    { name: 'VMC Machine Facility', href: '#facilities' },
+    { name: 'Lathe Machine Facility', href: '#facilities' },
+    { name: 'Horizontal Honing', href: '#facilities' },
+    { name: 'Grinding & Chrome Plating', href: '#facilities' },
+    { name: 'Hydraulic Cylinder Testing', href: '#facilities' }
   ];
 
   return (
@@ -40,16 +40,22 @@ export default function Footer() {
             </div>
 
             <p className="footer-tagline">
-              "Precision Engineering & Hydraulic Cylinder Solutions"
+              "{companyData.tagline}"
             </p>
 
             <p className="footer-mission">
-              All types of CNC work, honing, hard chrome plating, machining facility, and specialized manufacturing & refurbishment of hydraulic cylinders.
+              "{companyData.motto}"
             </p>
 
-            <div className="footer-gst-chip">
-              <FileText size={15} className="text-gold" />
-              <span>GSTIN: {companyData.gst}</span>
+            <div className="footer-reg-chips">
+              <div className="footer-gst-chip">
+                <FileText size={15} className="text-gold" />
+                <span>GSTIN: {companyData.gst}</span>
+              </div>
+              <div className="footer-gst-chip">
+                <FileText size={15} className="text-gold" />
+                <span>PAN: {companyData.pan}</span>
+              </div>
             </div>
           </div>
 
@@ -68,9 +74,9 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Col 3: Services */}
+          {/* Col 3: Services & Facilities */}
           <div className="footer-col">
-            <h4 className="footer-col-title">Engineering Services</h4>
+            <h4 className="footer-col-title">In-House Facilities</h4>
             <ul className="footer-links-list">
               {servicesLinks.map((svc) => (
                 <li key={svc.name}>
@@ -125,7 +131,7 @@ export default function Footer() {
             © 2026 Shree Sidheshwar Industries. All Rights Reserved.
           </p>
           <div className="footer-bottom-notes">
-            <span>Bhosari, Pune • Industrial Engineering & Hydraulic Cylinders</span>
+            <span>Bhosari, Pune • Hydraulic Cylinders & Precision Machining Facilities</span>
           </div>
         </div>
       </div>

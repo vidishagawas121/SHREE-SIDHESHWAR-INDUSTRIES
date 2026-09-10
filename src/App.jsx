@@ -3,9 +3,11 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import QuickHighlights from './components/QuickHighlights';
 import About from './components/About';
-import Services from './components/Services';
-import Industries from './components/Industries';
+import Facilities from './components/Facilities';
+import Products from './components/Products';
+import Quality from './components/Quality';
 import HydraulicFeature from './components/HydraulicFeature';
+import Industries from './components/Industries';
 import WhyChooseUs from './components/WhyChooseUs';
 import Enquiry from './components/Enquiry';
 import Contact from './components/Contact';
@@ -28,8 +30,14 @@ export default function App() {
         {/* About Company */}
         <About />
 
-        {/* Engineering Services */}
-        <Services />
+        {/* In-House Machine Facilities with Technical Parameters */}
+        <Facilities />
+
+        {/* Products Catalog & Machine Output Gallery */}
+        <Products />
+
+        {/* 100% Quality Inspection & Metrology */}
+        <Quality />
 
         {/* Hydraulic Cylinder Feature Highlight */}
         <HydraulicFeature />
@@ -43,7 +51,7 @@ export default function App() {
         {/* Interactive WhatsApp Enquiry */}
         <Enquiry />
 
-        {/* Direct Contact Details */}
+        {/* Direct Contact Details, Registration & Bank Info */}
         <Contact />
       </main>
 

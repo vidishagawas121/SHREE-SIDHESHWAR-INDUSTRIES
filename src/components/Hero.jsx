@@ -24,7 +24,7 @@ export default function Hero() {
           <div className="hero-badge">
             <span className="badge-pulse"></span>
             <ShieldCheck size={16} className="text-gold" />
-            <span>Industrial Manufacturing & Refurbishment • Pune</span>
+            <span>Beyond the manufacturing • Pune</span>
           </div>
 
           {/* Headline */}
@@ -35,22 +35,22 @@ export default function Hero() {
 
           {/* Supporting text */}
           <p className="hero-description">
-            Specialized in CNC Work, Honing, Hard Chrome Plating, Machining and Manufacturing & Refurbishment of Hydraulic Cylinders.
+            Serving Steel Plants, Cement Plants & OEM Spare Parts with our in-house machining and hydraulic cylinder manufacturing facility.
           </p>
 
           {/* Key tags / bullet indicators */}
           <div className="hero-features-strip">
             <div className="feature-pill">
               <CheckCircle2 size={16} className="text-gold" />
-              <span>Heavy Industry Grade</span>
+              <span>In-House Facility</span>
             </div>
             <div className="feature-pill">
               <CheckCircle2 size={16} className="text-gold" />
-              <span>Micron Tolerance Honing</span>
+              <span>100% Quality Inspection</span>
             </div>
             <div className="feature-pill">
               <CheckCircle2 size={16} className="text-gold" />
-              <span>Hard Chrome Protection</span>
+              <span>Dual Pressure Tested</span>
             </div>
           </div>
 
@@ -66,8 +66,8 @@ export default function Hero() {
               <span>Send Enquiry on WhatsApp</span>
             </a>
 
-            <a href="#services" className="btn btn-secondary hero-btn-secondary">
-              <span>Explore Our Services</span>
+            <a href="#facilities" className="btn btn-secondary hero-btn-secondary">
+              <span>View Machine Facilities</span>
               <ChevronRight size={18} />
             </a>
           </div>
@@ -77,20 +77,26 @@ export default function Hero() {
         <div className="hero-sidebar-card">
           <div className="card-glass-header">
             <span className="accent-bar"></span>
-            <h3>Specialized Facility Capabilities</h3>
+            <h3>In-House Machine Facilities</h3>
           </div>
           <ul className="hero-capabilities-list">
             <li>
-              <strong>CNC Machining & Turning:</strong> High precision component engineering
+              <strong>CNC Turning Facility:</strong> Dia 10-500mm | Length 1000mm
             </li>
             <li>
-              <strong>Internal Bore Honing:</strong> Accurate dimensional mirror finishing
+              <strong>VMC Machine Facility:</strong> Travel X 800 | Y 1000 | Z 600mm
             </li>
             <li>
-              <strong>Hard Chrome Plating:</strong> Wear resistance & corrosion prevention
+              <strong>Lathe Turning:</strong> Dia 20-500mm | Length 2500mm (Steady Rest)
             </li>
             <li>
-              <strong>Hydraulic Cylinders:</strong> Complete new build & turnkey refurbishment
+              <strong>Horizontal Honing:</strong> 0.15 - 0.30 Ra finish | H8 / H9 tolerance
+            </li>
+            <li>
+              <strong>Grinding & Plating:</strong> 58 - 60 HRC hardness | Min 0.30µ
+            </li>
+            <li>
+              <strong>Cylinder Testing:</strong> Dual rod & piston end pressure testing
             </li>
           </ul>
           <div className="hero-card-footer">

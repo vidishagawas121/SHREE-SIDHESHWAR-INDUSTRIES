@@ -53,14 +53,17 @@ export default function Contact() {
                 </div>
               </div>
 
-              {/* GST */}
+              {/* GST & PAN Row */}
               <div className="contact-detail-row">
                 <div className="detail-icon-box">
                   <FileText size={22} className="text-gold" />
                 </div>
                 <div className="detail-text">
-                  <span className="detail-label">GST Identification Number</span>
-                  <p className="detail-value gst-highlight">{companyData.gst}</p>
+                  <span className="detail-label">Tax & Registration</span>
+                  <p className="detail-value">
+                    <strong>GSTIN:</strong> <span className="gst-highlight">{companyData.gst}</span><br />
+                    <strong>PAN:</strong> <span className="gst-highlight">{companyData.pan}</span>
+                  </p>
                 </div>
               </div>
 
@@ -74,6 +77,36 @@ export default function Contact() {
                   <a href={`mailto:${companyData.email}`} className="detail-link">
                     {companyData.email}
                   </a>
+                </div>
+              </div>
+
+              {/* Official Bank Account Details for B2B Procurements */}
+              <div className="contact-bank-card">
+                <div className="bank-header">
+                  <span className="bank-badge">Official Bank Details</span>
+                  <span className="bank-note">For B2B RTGS / NEFT / IMPS</span>
+                </div>
+                <div className="bank-grid">
+                  <div className="bank-field">
+                    <span className="bank-lbl">Bank Name</span>
+                    <strong className="bank-val">{companyData.bankDetails.bankName}</strong>
+                  </div>
+                  <div className="bank-field">
+                    <span className="bank-lbl">Branch</span>
+                    <strong className="bank-val">{companyData.bankDetails.branch}</strong>
+                  </div>
+                  <div className="bank-field">
+                    <span className="bank-lbl">Account Number</span>
+                    <strong className="bank-val font-mono">{companyData.bankDetails.accountNo}</strong>
+                  </div>
+                  <div className="bank-field">
+                    <span className="bank-lbl">IFSC Code</span>
+                    <strong className="bank-val font-mono">{companyData.bankDetails.ifscCode}</strong>
+                  </div>
+                  <div className="bank-field">
+                    <span className="bank-lbl">MICR Code</span>
+                    <strong className="bank-val font-mono">{companyData.bankDetails.micrCode}</strong>
+                  </div>
                 </div>
               </div>
             </div>

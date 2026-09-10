@@ -85,13 +85,19 @@ export default function HydraulicFeature() {
 
             {/* Right Image Visual */}
             <div className="hydraulic-feature-visual">
-              <div className="visual-image-wrapper">
-                <img
-                  src={companyData.images.hydraulicFeature}
-                  alt="Industrial Heavy Hydraulic Cylinder Engineering and Machining"
-                  className="hydraulic-img"
-                  loading="lazy"
-                />
+              <div className="visual-frame">
+                <div className="visual-image-wrapper">
+                  <img
+                    src={companyData.images.hydraulicFeature}
+                    alt="Industrial Heavy Hydraulic Cylinder Engineering and Machining"
+                    className="hydraulic-img"
+                    loading="lazy"
+                  />
+                  <div className="visual-tag-pill">
+                    <span className="visual-tag-dot"></span>
+                    <span>Actual Batch Production</span>
+                  </div>
+                </div>
                 <div className="visual-badge">
                   <span className="badge-title">Refurbish & Extend</span>
                   <span className="badge-sub">High-efficiency restoration for heavy plant cylinders</span>
