@@ -2829,17 +2829,23 @@ button, input, textarea, select {
   height: 240px;
   overflow: hidden;
   background: #0e1626;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
 }
 
 .output-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.5s ease;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  transition: transform 0.4s ease;
 }
 
 .output-gallery-card:hover .output-img {
-  transform: scale(1.05);
+  transform: scale(1.03);
 }
 
 .output-badge {
@@ -3170,17 +3176,78 @@ button, input, textarea, select {
 @media (max-width: 768px) {
   .facilities-grid {
     grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  /* Facilities images mobile scaling */
+  .facility-image-wrapper {
+    height: clamp(180px, 52vw, 220px);
+    padding: 8px 10px;
+  }
+
+  .facility-main-img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .facility-num-badge {
+    top: 10px;
+    left: 10px;
+    font-size: 0.75rem;
+    padding: 2px 8px;
+  }
+
+  .facility-secondary-badge {
+    width: 56px;
+    height: 56px;
+    bottom: 8px;
+    right: 8px;
+  }
+
+  /* Products & Output gallery mobile scaling */
+  .products-tab-nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 8px;
+  }
+
+  .product-tab-btn {
+    width: 100%;
+    justify-content: center;
+    padding: 10px 14px;
+    font-size: 0.85rem;
   }
 
   .products-grid,
   .output-gallery-grid {
     grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .product-img-wrapper,
+  .output-img-wrapper {
+    height: clamp(180px, 50vw, 210px);
+    padding: 8px;
+  }
+
+  .product-img,
+  .output-img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
   }
 
   .products-motto-banner {
     flex-direction: column;
-    padding: 24px;
+    padding: 22px 18px;
     text-align: center;
+    gap: 16px;
   }
 
   .motto-banner-cta {
@@ -3189,10 +3256,55 @@ button, input, textarea, select {
 
   .motto-banner-cta .btn {
     width: 100%;
+    justify-content: center;
+  }
+
+  /* Hydraulic Feature mobile image adjustment */
+  .hydraulic-feature-visual {
+    padding: 20px 14px;
+    border-left: none;
+    border-top: 1px solid rgba(212, 160, 23, 0.2);
+  }
+
+  .visual-frame {
+    max-width: 100%;
+  }
+
+  .hydraulic-img {
+    max-height: 250px;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  /* Quality Section mobile adjustments */
+  .quality-img {
+    height: clamp(200px, 55vw, 280px);
+    padding: 8px;
+    object-fit: contain;
+  }
+
+  .quality-badge-float {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    right: auto;
+    margin: 10px;
+    padding: 10px 12px;
+    gap: 10px;
+  }
+
+  .quality-badge-float h4 {
+    font-size: 0.9rem;
+  }
+
+  .quality-badge-float p {
+    font-size: 0.75rem;
   }
 
   .quality-standards-box {
     grid-template-columns: 1fr;
+    gap: 10px;
   }
 
   .quality-checklist {
@@ -3201,6 +3313,33 @@ button, input, textarea, select {
 
   .bank-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .facility-image-wrapper {
+    height: 180px;
+    padding: 6px 8px;
+  }
+
+  .product-img-wrapper,
+  .output-img-wrapper {
+    height: 180px;
+    padding: 6px;
+  }
+
+  .hydraulic-img {
+    max-height: 210px;
+  }
+
+  .quality-img {
+    height: 200px;
+  }
+
+  .facility-card-body,
+  .product-card-body,
+  .output-card-body {
+    padding: 18px 16px;
   }
 }
 

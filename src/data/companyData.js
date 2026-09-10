@@ -381,20 +381,36 @@ export const companyData = {
   ]
 };
 
-// Helper to generate the standardized WhatsApp enquiry URL
+// Universal helper to generate standardized WhatsApp enquiry URL for Vercel, Mobile & Desktop
 export function generateWhatsAppUrl(data = {}) {
+  // Support passing a raw requirement string or an options object
+  if (typeof data === "string") {
+    data = { requirement: data };
+  }
+
   const {
     name = "",
     company = "",
     phone = "",
     requirement = "",
-    serviceName = ""
+    serviceName = "",
+    directText = ""
   } = data;
+
+  const cleanPhone = (companyData.primaryWhatsappNumber || "919763010396").replace(/\D/g, "");
+
+  if (directText) {
+    return `https://api.whatsapp.com/send?phone=${cleanPhone}&text=${encodeURIComponent(directText)}`;
+  }
 
   let text = `Hello Shree Sidheshwar Industries,\n\nI would like to make an enquiry regarding:`;
 
   if (serviceName) {
-    text += `\nService / Facility: ${serviceName}`;
+    text += `\n• Service / Item: ${serviceName}`;
+  }
+
+  if (requirement) {
+    text += `\n\nRequirement Details:\n${requirement}`;
   }
 
   if (name) {
@@ -407,12 +423,8 @@ export function generateWhatsAppUrl(data = {}) {
     text += `\nPhone: ${phone}`;
   }
 
-  if (requirement) {
-    text += `\n\nRequirement Details:\n${requirement}`;
-  }
-
-  text += `\n\nPlease contact me with quotation / technical discussion.\n\nThank you.`;
+  text += `\n\nPlease connect with quotation / technical discussion.\n\nThank you.`;
 
   const encoded = encodeURIComponent(text);
-  return `https://wa.me/${companyData.primaryWhatsappNumber}?text=${encoded}`;
+  return `https://api.whatsapp.com/send?phone=${cleanPhone}&text=${encoded}`;
 }

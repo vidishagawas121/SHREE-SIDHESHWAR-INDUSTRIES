@@ -9,12 +9,12 @@ import {
   User, 
   Clock
 } from 'lucide-react';
-import { companyData } from '../data/companyData';
+import { companyData, generateWhatsAppUrl } from '../data/companyData';
 
 export default function Contact() {
-  const whatsappUrl = `https://wa.me/${companyData.primaryWhatsappNumber}?text=${encodeURIComponent(
-    "Hello Shree Sidheshwar Industries,\n\nI want to connect regarding your engineering and machining services."
-  )}`;
+  const whatsappUrl = generateWhatsAppUrl({
+    requirement: "Hello Shree Sidheshwar Industries, I want to connect regarding your precision engineering, machining, and hydraulic cylinder services."
+  });
 
   return (
     <section id="contact" className="contact-section">
@@ -170,7 +170,7 @@ export default function Contact() {
                   </a>
                 </div>
                 <a
-                  href={`https://wa.me/91${companyData.contacts[0].primaryPhone}`}
+                  href={`https://api.whatsapp.com/send?phone=91${companyData.contacts[0].primaryPhone}&text=${encodeURIComponent("Hello Mr. Sachin, I am reaching out from your website regarding an engineering requirement.")}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="person-wa-link"

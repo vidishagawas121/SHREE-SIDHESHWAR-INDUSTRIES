@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { MessageSquare, Menu, X, Phone, Shield } from 'lucide-react';
-import { companyData } from '../data/companyData';
+import { companyData, generateWhatsAppUrl } from '../data/companyData';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -77,7 +77,7 @@ export default function Navbar() {
           {/* CTA & Mobile Toggle */}
           <div className="nav-actions">
             <a
-              href={`https://wa.me/${companyData.primaryWhatsappNumber}?text=${encodeURIComponent("Hello Shree Sidheshwar Industries, I would like to inquire about your engineering services.")}`}
+              href={generateWhatsAppUrl({ requirement: "Hello Shree Sidheshwar Industries, I would like to inquire about your engineering services and machine facilities." })}
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-whatsapp nav-whatsapp-btn"
@@ -117,7 +117,7 @@ export default function Navbar() {
 
             <div className="mobile-cta-wrapper">
               <a
-                href={`https://wa.me/${companyData.primaryWhatsappNumber}?text=${encodeURIComponent("Hello Shree Sidheshwar Industries, I would like to inquire about your engineering services.")}`}
+                href={generateWhatsAppUrl({ requirement: "Hello Shree Sidheshwar Industries, I would like to inquire about your engineering services and machine facilities." })}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-whatsapp mobile-wa-btn"

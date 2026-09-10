@@ -135,7 +135,7 @@ export default function Products() {
           </div>
           <div className="motto-banner-cta">
             <a
-              href={`https://wa.me/${companyData.primaryWhatsappNumber}?text=${encodeURIComponent("Hello Shree Sidheshwar Industries, I have an urgent cylinder / machining requirement.")}`}
+              href={generateWhatsAppUrl({ requirement: "Hello Shree Sidheshwar Industries, I have an urgent cylinder / machining requirement." })}
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-whatsapp"

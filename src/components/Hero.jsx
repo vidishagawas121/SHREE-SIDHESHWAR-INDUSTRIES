@@ -1,11 +1,11 @@
 import React from 'react';
 import { MessageSquare, ChevronRight, CheckCircle2, ShieldCheck } from 'lucide-react';
-import { companyData } from '../data/companyData';
+import { companyData, generateWhatsAppUrl } from '../data/companyData';
 
 export default function Hero() {
-  const whatsappHeroUrl = `https://wa.me/${companyData.primaryWhatsappNumber}?text=${encodeURIComponent(
-    "Hello Shree Sidheshwar Industries,\n\nI visited your website and would like to discuss an engineering requirement.\n\nPlease connect with me."
-  )}`;
+  const whatsappHeroUrl = generateWhatsAppUrl({
+    requirement: "Hello Shree Sidheshwar Industries, I visited your website and would like to discuss an engineering & hydraulic manufacturing requirement."
+  });
 
   return (
     <section id="home" className="hero-section">

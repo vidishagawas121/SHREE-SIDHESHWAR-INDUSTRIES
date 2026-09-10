@@ -1,11 +1,11 @@
 import React from 'react';
 import { MessageSquare } from 'lucide-react';
-import { companyData } from '../data/companyData';
+import { companyData, generateWhatsAppUrl } from '../data/companyData';
 
 export default function WhatsAppButton() {
-  const whatsappUrl = `https://wa.me/${companyData.primaryWhatsappNumber}?text=${encodeURIComponent(
-    "Hello Shree Sidheshwar Industries,\n\nI would like to make an enquiry regarding your machining and hydraulic services."
-  )}`;
+  const whatsappUrl = generateWhatsAppUrl({
+    requirement: "Hello Shree Sidheshwar Industries, I would like to make an enquiry regarding your machining and hydraulic services."
+  });
 
   return (
     <a
